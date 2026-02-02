@@ -2,7 +2,7 @@
 
 An example project to demonstrate the creation of a CLI using Node.js.
 
-<a href="https://egmz.medium.com">Building a CLI with Node.js in 2024</a>
+<a href="https://gengom.medium.com">Building a CLI with Node.js in 2024</a>
 
 <img src="./assets/main.png">
 

@@ -1,82 +1,109 @@
-# My Node CLI
+<div align="center">
+  <img src=".github/logo.png" alt="my-node-cli" width="180">
 
-An example project to demonstrate the creation of a CLI using Node.js.
+  <h1>my-node-cli</h1>
 
-<a href="https://gomzkov.medium.com/">Building a CLI with Node.js in 2024</a>
+  <p><strong>Learn how to build beautiful Node.js CLIs</strong></p>
 
-<img src="./assets/main.png">
+  <p>
+    <a href="https://github.com/gomzkov/my-node-cli/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+    <a href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg" alt="node version"></a>
+  </p>
 
-## Project Structure
+  <p>
+    <a href="#examples">Examples</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#libraries">Libraries</a> •
+    <a href="https://gomzkov.medium.com/">Blog Post</a>
+  </p>
 
-Below is the folder and file structure:
-
-```
-.
-├── README.md
-├── bin
-│   └── index.js
-├── package-lock.json
-├── package.json
-└── src
-    ├── commands
-    │   ├── basic-example.js
-    │   ├── chalk-example.js
-    │   ├── figlet-example.js
-    │   ├── inquirer-confirm-example.js
-    │   ├── inquirer-example.js
-    │   ├── inquirer-list-example.js
-    │   └── ora-example.js
-    └── utils
-```
+</div>
 
 <br>
+
+A hands-on example project demonstrating how to create interactive command-line interfaces with Node.js. Companion repo for the Medium article [Building a CLI with Node.js in 2024](https://gomzkov.medium.com/).
+
+<div align="center">
+  <img src=".github/screenshot.png" alt="CLI Demo" width="600">
+</div>
+
+## Examples
+
+This project includes interactive examples for popular CLI libraries:
+
+| Example | Library | What it demonstrates |
+|---------|---------|---------------------|
+| Basic Example | Node.js | Simple console output |
+| Chalk Example | [chalk](https://github.com/chalk/chalk) | Colored terminal output |
+| Figlet Example | [figlet](https://github.com/patorjk/figlet.js) | ASCII art text banners |
+| Inquirer Example | [inquirer](https://github.com/SBoudrias/Inquirer.js) | Interactive text prompts |
+| Inquirer Confirm | [inquirer](https://github.com/SBoudrias/Inquirer.js) | Yes/no confirmation prompts |
+| Inquirer List | [inquirer](https://github.com/SBoudrias/Inquirer.js) | Selection list prompts |
+| Ora Example | [ora](https://github.com/sindresorhus/ora) | Terminal spinners |
 
 ## Installation
 
-Ensure you have Node.js installed on your computer
+```bash
+# Clone the repository
+git clone https://github.com/gomzkov/my-node-cli.git
 
-1. Clone the repository to your local machine using Git:
+# Navigate to project
+cd my-node-cli
 
-   ```bash
-   git clone https://github.com/egmzy/my-node-cli.git
-   ```
+# Install dependencies
+npm install
 
-2. Navigate to the project directory:
-
-   ```bash
-   cd my-node-cli
-   ```
-
-3. Install the project dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Link the project globally to make the `my-node-cli` command available on your system:
-   ```bash
-   npm link
-   ```
-   This step allows you to run the `my-node-cli` command from anywhere in your terminal.
-
-<br>
+# Link globally (optional)
+npm link
+```
 
 ## Usage
 
-After installation, you can run the CLI by typing `my-node-cli` in your terminal. This command will display a list of examples that you can choose from, demonstrating various CLI functionalities:
+Run the CLI to see all examples:
 
-- Basic Example
-- Chalk Example
-- Figlet Example
-- Inquirer Confirm Example
-- Inquirer Example
-- Inquirer List Example
-- Ora Example
+```bash
+# If linked globally
+my-node-cli
 
-Select an example to run it and see the functionality in action.
+# Or run directly
+npm start
+```
 
-<br>
+Select an example from the interactive menu to see it in action.
 
-## Contributing
+## Libraries
 
-Contributions are welcome! Please feel free to fork the repository, make changes, and submit pull requests.
+This project demonstrates these essential CLI libraries:
+
+- **[Commander](https://github.com/tj/commander.js)** — CLI framework with commands and options
+- **[Chalk](https://github.com/chalk/chalk)** — Terminal string styling
+- **[Figlet](https://github.com/patorjk/figlet.js)** — ASCII art text generation
+- **[Inquirer](https://github.com/SBoudrias/Inquirer.js)** — Interactive command line prompts
+- **[Ora](https://github.com/sindresorhus/ora)** — Elegant terminal spinners
+
+## Project Structure
+
+```
+my-node-cli/
+├── bin/
+│   └── index.js          # CLI entry point
+├── src/
+│   └── commands/         # Example implementations
+│       ├── basic-example.js
+│       ├── chalk-example.js
+│       ├── figlet-example.js
+│       ├── inquirer-example.js
+│       ├── inquirer-confirm-example.js
+│       ├── inquirer-list-example.js
+│       └── ora-example.js
+├── package.json
+└── README.md
+```
+
+## Learn More
+
+Read the full tutorial on Medium: [Building a CLI with Node.js in 2024](https://gomzkov.medium.com/)
+
+## License
+
+MIT
